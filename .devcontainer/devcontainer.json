@@ -1,0 +1,40 @@
+{
+    "name": "Azure TerraForm IaC",
+    "image": "mcr.microsoft.com/powershell:lts-debian-11",
+
+    // Configure tool-specific properties.
+    "customizations": {
+        // Configure properties specific to VS Code.
+        "vscode": {
+            // Set *default* container specific settings.json values on container create.
+            "settings": {
+                "terminal.integrated.defaultProfile.linux": "pwsh"
+            },
+            // Add the IDs of extensions you want installed when the container is created.
+            "extensions": [
+                "ms-vscode.azure-account",
+                "ms-azuretools.vscode-azureresourcegroups",
+                "msazurermtools.azurerm-vscode-tools",
+                "ms-vscode.powershell",
+                "redhat.vscode-yaml",
+                "GitHub.vscode-pull-request-github",
+                "GitHub.vscode-github-actions",
+                "ms-azuretools.vscode-azureterraform",
+                "HashiCorp.terraform"
+            ]
+        }
+    },
+    "features": {
+        "ghcr.io/devcontainers/features/common-utils:2": {
+            "installZsh": "true",
+            "username": "vscode",
+            "upgradePackages": "false",
+            "nonFreePackages": "true"
+        },
+        "ghcr.io/devcontainers/features/azure-cli:1": {},
+        "ghcr.io/devcontainers/features/powershell:1": {},
+        "ghcr.io/devcontainers/features/git:1": {},
+        "ghcr.io/devcontainers/features/github-cli:1": {},
+        "ghcr.io/devcontainers/features/terraform:1": {}
+    }
+}

@@ -32,7 +32,9 @@
             "nonFreePackages": "true"
         },
         "ghcr.io/devcontainers/features/azure-cli:1": {},
-        "ghcr.io/devcontainers/features/powershell:1": {},
+        "ghcr.io/devcontainers/features/powershell:1": {
+            "modules": "az"
+        },
         "ghcr.io/devcontainers/features/git:1": {},
         "ghcr.io/devcontainers/features/github-cli:1": {},
         "ghcr.io/devcontainers/features/terraform:1": {}
